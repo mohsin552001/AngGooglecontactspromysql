@@ -1,0 +1,32 @@
+<div class="container">
+  <table>
+    <tr>
+      <td>Name</td>
+      <td>Email</td>
+      <td>Phone No</td>
+      <td>JobTitleandCompany</td>
+      <td>Delete</td>
+      <td>Edit</td>
+    </tr>
+    <tr *ngFor="let usr of filteredUsers()">
+      <td><input type="checkbox" /></td>
+      <div
+        class="fordifferbwtcheckbox"
+        routerLink="components/save/{{ usr.id }}"
+      >
+        <td>{{ usr.Name }}</td>
+        <td>{{ usr.Email }}</td>
+        <td>{{ usr.phoneNumber }}</td>
+        <td>{{ usr.Jobtitlecomp }}</td>
+        <td>
+          <button (click)="DeleteId(usr.id)">Delete</button>
+        </td>
+        <td>
+          <button (click)="updateUser()" [routerLink]="['/create', usr.id]">
+            Edit
+          </button>
+        </td>
+      </div>
+    </tr>
+  </table>
+</div>

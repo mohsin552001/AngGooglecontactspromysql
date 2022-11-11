@@ -1,0 +1,51 @@
+<div class="CreateUserSection">
+  <div class="userlogosection">
+    <div class="logo">
+      <div class="cross">
+        <a routerLink="save"> <i class="fa fa-times" aria-hidden="true"></i></a>
+        <img src="assets/userlogo.png" alt="" />
+      </div>
+      <button
+        mat-button
+        color="light"
+        routerLink="/save"
+        (click)="userSubmit()"
+      >
+        Save
+      </button>
+    </div>
+  </div>
+  <div class="formSection">
+    <form class="example-form" [formGroup]="userForm">
+      <div class="CreateUserForm">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Name</mat-label>
+          <input formControlName="Name" matInput />
+        </mat-form-field>
+      </div>
+      <div class="CreateUserForm">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Email</mat-label>
+          <input formControlName="Email" matInput />
+        </mat-form-field>
+      </div>
+      <div class="CreateUserForm">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Phone Number</mat-label>
+          <input formControlName="phoneNumber" matInput />
+        </mat-form-field>
+      </div>
+      <div class="CreateUserForm">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>jobTitle&Company</mat-label>
+          <input formControlName="Jobtitlecomp" matInput />
+        </mat-form-field>
+      </div>
+    </form>
+  </div>
+</div>
+<router-outlet></router-outlet>

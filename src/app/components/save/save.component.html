@@ -1,0 +1,21 @@
+<div *ngIf="save">
+  <div class="userlogosection" *ngIf="hidedetail">
+    <div class="logo">
+      <div class="cross">
+        <i (click)="hide()" class="fa fa-times" aria-hidden="true"></i>
+        <img src="assets/userlogo.png" alt="" />
+      </div>
+      <h1>thisis is h1 {{ save.Name }}</h1>
+    </div>
+
+    <br />
+    <h1>{{ save.Email }}</h1>
+    <br />
+    <h1>{{ save.phoneNumber }}</h1>
+
+    <br />
+    <h1>
+      <h1>{{ save.Jobtitlecomp }}</h1>
+    </h1>
+  </div>
+</div>

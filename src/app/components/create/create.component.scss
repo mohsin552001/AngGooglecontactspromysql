@@ -1,0 +1,54 @@
+.CreateUserSection{
+
+display: flex;
+flex-direction: column;
+  .userlogosection{
+
+    border: 1px solid;
+position: relative;
+    .logo{
+
+     display: flex;
+     justify-content: space-between;
+     gap: 50px;
+     img{
+      border-radius: 50%;
+      height: 200px;
+
+     }
+     button{
+height: 50px;
+margin-top: 20%;
+background-color: ghostwhite;
+     }
+
+    }
+  }
+  matInput{
+    color: black;
+  }
+
+input{
+  color: black;
+}
+
+
+
+  .formSection{
+  .example-form{
+    .CreateUserForm{
+display: flex;align-items: center;gap: 50px;
+padding-left: 50px;color: gainsboro;
+.mat-form-field{
+  width: 500px;
+  input{
+    color: gainsboro;
+    width: 500px;
+  }
+}
+    }
+
+  }
+  }
+}
+

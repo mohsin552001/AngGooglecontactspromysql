@@ -1,0 +1,19 @@
+
+    .userlogosection{
+
+      border: 1px solid;
+  position: relative;
+      .logo{
+
+       display: flex;
+       justify-content: space-between;
+       gap: 50px;
+       img{
+        border-radius: 50%;
+        height: 200px;
+
+       }
+
+      }
+
+    }
